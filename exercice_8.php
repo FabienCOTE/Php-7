@@ -30,7 +30,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8" />
         <title>Exercice 8</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div>
@@ -41,23 +41,23 @@ and open the template in the editor.
         if (!isset($_POST['lastName']) && !isset($_POST['firstName'])) {
         ?>
         <div>
-            <form method = "post" action = "" enctype="multipart/form-data">
+            <form method="post" action="" enctype="multipart/form-data">
                 <p>
-                    <label for = "gender">Civilité</label>
-                    <select name = "gender" id = "gender">
-                        <option value = "Mr">Monsieur</option>
-                        <option value = "Mme">Madame</option>
+                    <label for="gender">Civilité</label>
+                    <select name="gender" id="gender" required>
+                        <option value="Mr">Monsieur</option>
+                        <option value="Mme">Madame</option>
                     </select>
-                    <label for = "lastName">Votre nom :</label>
-                    <input type = "text" name = "lastName" id = "lastName" />
+                    <label for="lastName">Votre nom :</label>
+                    <input type="text" name="lastName" id="lastName" required />
                     <br />
-                    <label for = "firstName">Votre prénom :</label>
-                    <input type = "text" name = "firstName" id = "firstName" />
+                    <label for="firstName">Votre prénom :</label>
+                    <input type="text" name="firstName" id="firstName" required />
                     <br />
                     <label for="files">Votre fichier</label>
-                    <input type="file" name="files" id="files" />
+                    <input type="file" name="files" id="files" required />
                     <br />
-                    <input type = "submit" name = "submit" value = "Envoyer" />
+                    <input type="submit" name="submit" value="Envoyer" />
                 </p>
             </form>
         </div>

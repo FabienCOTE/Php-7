@@ -19,7 +19,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8" />
         <title>Exercice 5</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div>
@@ -32,15 +32,15 @@ and open the template in the editor.
             <form method="post" action="">
                 <p>
                     <label for="gender">Civilité</label>
-                    <select name="gender" id="gender">
+                    <select name="gender" id="gender" required>
                         <option value="Mr">Monsieur</option>
                         <option value="Mme">Madame</option>
                       </select>
                     <label for="lastName">Votre nom :</label>
-                    <input type="text" name="lastName" id="lastName" />
+                    <input type="text" name="lastName" id="lastName" required />
                     <br />
                     <label for="firstName">Votre prénom :</label>
-                    <input type="text" name="firstName" id="firstName" />
+                    <input type="text" name="firstName" id="firstName" required />
                     <input type="submit" value="Envoyer" />
                 </p>
             </form>

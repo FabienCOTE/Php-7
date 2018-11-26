@@ -19,10 +19,10 @@ and open the template in the editor.
             <form method="get" action="ex1-user.php">
                 <p>
                     <label for="lastName">Votre nom :</label>
-                    <input type="text" name="lastName" id="lastName" />
+                    <input type="text" name="lastName" id="lastName" required />
                     <br />
                     <label for="firstName">Votre prénom :</label>
-                    <input type="text" name="firstName" id="firstName" />
+                    <input type="text" name="firstName" id="firstName" required />
                     <input type="submit" value="Envoyer" />
                 </p>
             </form>
