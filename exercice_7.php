@@ -17,11 +17,6 @@ if (isset($_POST['lastName']) && isset($_POST['firstName']) && isset($_POST['gen
 }
 ?>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
@@ -33,9 +28,7 @@ and open the template in the editor.
             <h1>Exercice 7</h1>
             <p>Au formulaire de l'exercice 5, ajouter un champ d'envoi de fichier. Afficher en plus de ce qui est demandé à l'exercice 6, le nom et l'extension du fichier.</p>
         </div>
-        <?php
-        if (!isset($_POST['lastName']) && !isset($_POST['firstName'])) {
-        ?>
+        <?php if (!isset($_POST['lastName']) && !isset($_POST['firstName'])) { ?>
         <div>
             <form method="post" action="" enctype="multipart/form-data">
                 <p>

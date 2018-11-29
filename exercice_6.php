@@ -10,11 +10,6 @@ if (isset($_POST['lastName']) && isset($_POST['firstName']) && isset($_POST['gen
 }
 ?>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
@@ -26,9 +21,7 @@ and open the template in the editor.
             <h1>Exercice 6</h1>
             <p>Avec le formulaire de l'exercice 5, Si des données sont passées en POST ou en GET, le formulaire ne doit pas être affiché. Par contre les données transmises doivent l'être. Dans le cas contraire, c'est l'inverse. Utiliser qu'une seule page.</p>
         </div>
-        <?php
-        if (!isset($_POST['lastName']) && !isset($_POST['firstName'])) {
-        ?>
+        <?php if (!isset($_POST['lastName']) && !isset($_POST['firstName'])) { ?>
         <div>
             <form method="post" action="">
                 <p>

@@ -21,11 +21,6 @@ if (isset($_POST['lastName']) && isset($_POST['firstName']) && isset($_POST['gen
 }
 ?>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
@@ -37,9 +32,7 @@ and open the template in the editor.
             <h1>Exercice 8</h1>
             <p>Sur le formulaire de l'exercice 6, en plus de ce qui est demandé sur les exercices précédent, vérifier que le fichier transmis est bien un fichier pdf.</p>
         </div>
-        <?php
-        if (!isset($_POST['lastName']) && !isset($_POST['firstName'])) {
-        ?>
+        <?php if (!isset($_POST['lastName']) && !isset($_POST['firstName'])) { ?>
         <div>
             <form method="post" action="" enctype="multipart/form-data">
                 <p>
